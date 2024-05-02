@@ -8,4 +8,4 @@ vim.keymap.set("n", "<C-l>", "<C-w>l")
 vim.keymap.set("v", "∆", ":m'>+<CR>gv=gv")
 vim.keymap.set("v", "˚", ":m-2<CR>gv=gv")
 
-vim.keymap.set("n", "<leader>e", "<CMD>NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>e", ":Ex<CR>")

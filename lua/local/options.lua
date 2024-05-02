@@ -36,5 +36,8 @@ vim.opt.termguicolors = true
 -- 12 line padding
 vim.opt.scrolloff = 12
 
-
+-- Others
 vim.opt.updatetime = 50
+
+
+vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, { pattern="*.h", command="setlocal filetype=c"})
