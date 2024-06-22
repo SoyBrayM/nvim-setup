@@ -30,4 +30,3 @@ vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
 -- Autocommands
-vim.api.nvim_create_autocmd({"BufRead", "BufNewFile"}, { pattern="*.h", command="setlocal filetype=c"})
