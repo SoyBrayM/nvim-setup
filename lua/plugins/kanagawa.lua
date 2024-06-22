@@ -4,11 +4,7 @@ return {
 	lazy = false,
 
 	config = function()
-		require("kanagawa").setup({
-			transparent = true
-		})
-
-		vim.cmd("colorscheme kanagawa")
+        require("config.kanagawa")
 	end,
 }
 
