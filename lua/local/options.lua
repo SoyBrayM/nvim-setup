@@ -1,6 +1,9 @@
 -- Disable mouse ¡VERY IMPORTANT!
 vim.opt.mouse = ""
 
+-- Let vim know that there is a nerdfont
+vim.g.have_nerd_font = true
+
 -- Line number options
 vim.opt.number = true
 vim.opt.relativenumber = true
