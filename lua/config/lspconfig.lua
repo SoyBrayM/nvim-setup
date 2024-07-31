@@ -10,7 +10,8 @@ lspconfig.lua_ls.setup({ capabilities = capabilities })
 
 lspconfig.clangd.setup({
     filetypes = { "c", "h", "cpp", "hpp" },
-    capabilities = capabilities
+    capabilities = capabilities,
+    cmd = {"clangd", "--clang-tidy", "--enable-config"}
 })
 
 vim.api.nvim_create_autocmd('LspAttach', {
