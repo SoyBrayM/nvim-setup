@@ -14,6 +14,13 @@ lspconfig.clangd.setup({
     cmd = {"clangd"}
 })
 
+
+lspconfig.ltex.setup({ capabilities = capabilities })
+lspconfig.texlab.setup({ capabilities = capabilities })
+lspconfig.ts_ls.setup({ capabilities = capabilities })
+lspconfig.html.setup({ capabilities = capabilities })
+lspconfig.cssls.setup({ capabilities = capabilities })
+
 vim.api.nvim_create_autocmd('LspAttach', {
     callback = function(args)
         vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, { buffer = args.buf, noremap = true })
